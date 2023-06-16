@@ -1,0 +1,9 @@
+.square {
+  @apply grid h-24 w-24 cursor-pointer place-items-center rounded-md border-2 text-5xl;
+  border-color: #eee;
+}
+
+.square.is_selected {
+  color: #fff;
+  background-color: #09f;
+}

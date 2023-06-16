@@ -1,0 +1,16 @@
+.winner {
+  @apply absolute left-0 top-0 grid h-screen w-screen place-items-center bg-black bg-opacity-70;
+}
+
+.winner__text {
+  @apply flex flex-col items-center justify-center gap-5;
+  background-color: #111;
+  height: 300px;
+  width: 320px;
+  border: 2px solid #eee;
+  border-radius: 10px;
+}
+
+.winner__win {
+  @apply mx-auto mt-0 flex w-fit gap-4 rounded-xl border-2 border-white;
+}

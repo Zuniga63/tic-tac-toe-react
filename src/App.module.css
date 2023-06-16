@@ -1,0 +1,30 @@
+@value square from "./components/Square.module.css";
+@value winner from "./components/WinnerModal.module.css";
+
+.board {
+  @apply mx-auto my-10 w-fit text-center;
+}
+
+.board__button {
+  @apply m-6 w-24 cursor-pointer rounded-md border-2 border-white bg-transparent px-3 py-2 font-bold text-gray-200 transition-colors duration-200 hover:bg-gray-200 hover:text-zinc-900;
+}
+
+.title {
+  @apply mb-4;
+  color: #eee;
+}
+
+.game {
+  @apply grid grid-cols-3 gap-3;
+}
+
+.turn {
+  @apply relative mx-4 mt-4 flex w-fit justify-center rounded-xl;
+}
+
+.turn .square,
+.winner .square {
+  @apply pointer-events-none border-transparent;
+  width: 70px;
+  height: 70px;
+}
